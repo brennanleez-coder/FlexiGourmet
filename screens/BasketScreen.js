@@ -83,7 +83,7 @@ const BasketScreen = () => {
 
         <View className="flex-row items-center space-x-4 px-4 py-3 bg-white my-5">
             <Image
-            source={{ uri: 'https://links.papareact.com/wru' }}
+            // source={{ uri: 'https://rb.gy/nyltvv'}}
             className="h-7 w-7 bg-gray-300 p-4 rounded-full"
             />
             <Text className="flex-1">Deliver in 50-75 min</Text>
@@ -105,7 +105,7 @@ const BasketScreen = () => {
                         <Text className="text-[#00CCBB]">{items.length} x </Text>
                         <Image
                         // source={{ uri: value[0].image }} //doesnt matter [0] or [1] because they are all same item
-                        source={{ uri: 'https://links.papareact.com/wru'}} //just for placeholder
+                        // source={{ uri: 'https://rb.gy/nyltvv'}} //just for placeholder
                         className="h-12 w-12 rounded-full"
                         />
                         <Text className="flex-1">{items[0]?.name}</Text>

@@ -7,7 +7,7 @@ import DishRow from '../components/DishRow';
 import BasketIcon from '../components/BasketIcon';
 import { useDispatch } from 'react-redux';
 import { setRestaurant } from '../slices/restaurantSlice';
-
+import Sushi from '../assets/Sushi.jpeg';
 const RestaurantScreen = () => {
     const navigation = useNavigation();
     const { 
@@ -37,9 +37,7 @@ const RestaurantScreen = () => {
     <ScrollView>
       <View className="relative">
         <Image
-            source={{
-                url: 'https://links.papareact.com/gn7'
-            }}
+            source={Sushi}
             className="w-full h-56 bg-gray-300 p-4"
         />
         <TouchableOpacity

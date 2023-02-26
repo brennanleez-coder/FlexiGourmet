@@ -36,14 +36,14 @@ const DishRow = ({
             </View>
 
 
-        <View>
+        <View className="">
             <Image
             // style={{
             //     borderWidth: 1,
             //     borderColor: '#F3F3F4',
             // }}
             source={image}
-            className="h-20 w-20 bg-gray-300 p-4 border border-gray-100"
+            className="h-20 w-20 bg-gray-300 p-4 border border-gray-100 rounded-lg"
             />
       </View>
       </View>
@@ -51,7 +51,7 @@ const DishRow = ({
 
     {isPressed && (
         <View className="bg-white px-4">
-            <View className={`flex-row items-center space-x-2 pb-3  ${isPressed && "border-b-0"}`}>
+            <View className={`flex-row items-center space-x-2 pb-3 ${isPressed && "border-b-0"}`}>
                 <TouchableOpacity
                 onPress={removeItemFromBasket}
                 disabled={items.length === 0}

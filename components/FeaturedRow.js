@@ -3,6 +3,7 @@ import React from 'react'
 import {ArrowRightIcon} from 'react-native-heroicons/outline'
 import RestaurantCard from './RestaurantCard'
 import {newArrivalRestaurants} from '../data/NewArrivalRestaurants'
+import Sushi from '../assets/food/Sushi.jpeg'
 
 const FeaturedRow = ({id, title, description}) => {
   return (
@@ -27,7 +28,7 @@ const FeaturedRow = ({id, title, description}) => {
               key={restaurant.id}
               id={restaurant.id}
               // imgUrl={restaurant.imgUrl}
-              imgUrl="https://links.papareact.com/gn7"
+              imgUrl={Sushi}
               title={restaurant.title}
               rating={restaurant.rating}
               genre={restaurant.genre}

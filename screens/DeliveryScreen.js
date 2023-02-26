@@ -9,7 +9,7 @@ import * as Progress from 'react-native-progress';
 import MapView, { Marker } from 'react-native-maps';
 import { emptyBasket } from '../slices/basketSlice';
 import { useDispatch } from 'react-redux';
-
+import DeliveryGif from "../assets/DeliveryGif.webp"
 const DeliveryScreen = () => {
     const navigation = useNavigation();
     const restaurant = useSelector(selectRestaurant)
@@ -40,7 +40,7 @@ const DeliveryScreen = () => {
                             <Text className="text-4xl font-bold">45-55 Minutes</Text>
                         </View>
                         <Image
-                        source={{ uri: 'https://links.papareact.com/fls' }}
+                        source={DeliveryGif}
                         className="h-20 w-20"
                         />
                     </View>
@@ -73,7 +73,7 @@ const DeliveryScreen = () => {
                 </MapView>
                 <SafeAreaView className="bg-white flex-row items-center space-x-5 h-28">
                     <Image
-                    source={{ uri: 'https://links.papareact.com/wru' }}
+                    source={DeliveryGif}
                     className="h-12 w-12 bg-gray-300 p-4 rounded-full ml-5"
                     />
                     <View className="flex-1">

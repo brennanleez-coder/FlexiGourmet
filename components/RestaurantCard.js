@@ -35,7 +35,7 @@ const RestaurantCard = ({
     }
     >
       <Image
-        source={{ url: imgUrl }}
+        source={imgUrl}
         className="h-36 w-64 rounded-sm"
       />
       <View className="px-3 pb-4">
